@@ -1,0 +1,100 @@
+{
+  "name":"mark",
+  "label":"Mark Workflow",
+  "subject_fetch_limit":"10",
+  "generates_subjects": true,
+  "generates_subjects_after": 1,
+  "generates_subjects_for": "transcribe",
+  "generates_subjects_max": 1,
+  "retire_limit": 0.75,
+
+  "first_task":"pick_page_type",
+
+  "tasks":{
+    "pick_page_type":{
+      "tool":"pickOne",
+      "instruction":"What kind of page is this?",
+      "help": {
+        "title": "Page Type",
+        "file": "pick_page_type"
+      },
+      "tool_config": {
+        "options":[
+          {
+            "value":"certificate_domicile",
+            "label":"Certificate of Domicile",
+            "next_task":"cd_type"
+          },
+          {
+            "value": "certificate_exempting",
+            "label":"Certificate Exempting From Dictation Test",
+            "next_task": "cedt_task"
+          },
+          {
+            "value":"certificate_back",
+            "label":"Back of certificate",
+            "next_task":"certificate_back_task"
+          },
+          {
+            "value":"landing_form",
+            "label":"Landing form (no. 32)",
+            "next_task":"landing_form_task"
+          },
+          {
+            "value":"landing_form_back",
+            "label":"Back of landing form",
+            "next_task": "landing_form_back_task"
+          },
+          {
+            "value":"handprint",
+            "label":"Loose handprint",
+            "next_task": "handprint_task"
+          },
+          {
+            "value":"other_page_type",
+            "label":"Other",
+            "help": {"title": "Other", "body": "Any page that doesn't fit the description of the above labels."},
+            "generates_subject_type": "transcribe_other_page_type",
+            "next_task": null
+          }
+        ]
+      }
+    },
+    "sa_task_1":{
+      "generates_subjects": true,
+      "tool":"pickOneMarkOne",
+      "next_task": "sa_task_2",
+      "instruction":"Select a label and draw rectangle around any corresponding entries on the document.",
+      "tool_config": {
+        "tools": [
+          {"type": "rectangleTool", "label": "Regimental No.", "color": "#373ACC", "generates_subject_type": "sa_regimental_no", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}},
+          {"type": "rectangleTool", "label": "Company", "color": "#373ACC", "generates_subject_type": "sa_company" },
+          {"type": "rectangleTool", "label": "Horse", "color": "#373ACC", "generates_subject_type": "sa_horse" },
+          {"type": "rectangleTool", "label": "Name", "color": "#373ACC", "generates_subject_type": "sa_name", "help": {"title":"Name", "body": "Given and surname of soldier. Transcribe as written. First Last order will vary."} },
+          {"type": "rectangleTool", "label": "Corps", "color": "#373ACC", "generates_subject_type": "sa_corps" },
+          {"type": "rectangleTool", "label": "Rank and length of service", "color": "#373ACC", "generates_subject_type": "sa_rank_length" },
+          {"type": "rectangleTool", "label": "Address", "color": "#373ACC", "generates_subject_type": "sa_address" },
+          {"type": "rectangleTool", "label": "Trade or calling", "color": "#373ACC", "generates_subject_type": "sa_trade", "help": {"title":"Trade or Calling", "body": "Description of job. May include two jobs. Maintain order from form."} },
+          {"type": "rectangleTool", "label": "Name and address of employer", "color": "#373ACC", "generates_subject_type": "sa_employer" }
+        ]
+      }
+    },
+    "other_data_field":{
+      "generates_subjects": true,
+      "tool":"pickOneMarkOne",
+      "instruction":"Draw a rectangle around any extra information that should be marked.",
+      "help":{
+        "title":"Unknown Data and Marginalia",
+        "file":"help_mark_other"
+      },
+      "next_task":null,
+      "tool_config":{
+        "tools": [
+          {"type":"rectangleTool", "label": "Other", "color": "#373ACC", "generates_subject_type":"transcribe_other_data_field"}
+        ]
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "title": "The Real Face of White Australia",
+  "short_title": "RealFace",
+  "summary": "Transcription of White Australia Policy files",
+  "background": "/images/background.png",
+  "admin_email": "tim.sherratt@gmail.com",
+    "team_emails": [ "tim.sherratt@gmail.com" ],
+  "logo": "/images/logo.png",
+  "privacy_policy":"https://www.zooniverse.org/privacy",
+  "terms_map": {
+    "group": "series",
+    "subject set": "file",
+    "subject": "page"
+  },
+  "team": [
+    {
+      "name": "Tim Sherratt",
+      "role": "project leader",
+      "organization": "UofC"
+    }
+  ],
+
+  "organizations": [
+    {
+     "title": "UofC",
+     "url": "http://canberra.edu.au"
+    }
+  ],
+  "forum": {},
+  "blog_url": "http://2017.exploringdigitalheritage.net",
+  "discuss_url": "",
+  "analytics": {
+    "google_tag_manager_client_id": ""
+  },
+  "metadata_search": {
+    "fields": [
+      {
+        "label": "Person",
+        "field": "name"
+      }
+    ],
+    "feature_on_homepage": false
+  }
+}
