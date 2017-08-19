@@ -23,17 +23,17 @@
           {
             "value":"certificate_domicile",
             "label":"Certificate of Domicile",
-            "next_task":"cd_type"
+            "next_task":"mark_cd_fields"
           },
           {
             "value": "certificate_exempting",
             "label":"Certificate Exempting From Dictation Test",
-            "next_task": "cedt_task"
+            "next_task": "mark_cedt_fields"
           },
           {
             "value":"certificate_back",
             "label":"Back of certificate",
-            "next_task":"certificate_back_task"
+            "next_task":"are_prints_present"
           },
           {
             "value":"landing_form",
@@ -43,43 +43,195 @@
           {
             "value":"landing_form_back",
             "label":"Back of landing form",
-            "next_task": "landing_form_back_task"
-          },
-          {
-            "value":"handprint",
-            "label":"Loose handprint",
-            "next_task": "handprint_task"
+            "next_task": "are_prints_present"
           },
           {
             "value":"other_page_type",
             "label":"Other",
             "help": {"title": "Other", "body": "Any page that doesn't fit the description of the above labels."},
             "generates_subject_type": "transcribe_other_page_type",
-            "next_task": null
+            "next_task": "are_prints_present"
           }
         ]
       }
     },
-    "sa_task_1":{
+    "mark_cd_fields":{
       "generates_subjects": true,
       "tool":"pickOneMarkOne",
-      "next_task": "sa_task_2",
+      "next_task": "are_photos_present",
       "instruction":"Select a label and draw rectangle around any corresponding entries on the document.",
       "tool_config": {
         "tools": [
-          {"type": "rectangleTool", "label": "Regimental No.", "color": "#373ACC", "generates_subject_type": "sa_regimental_no", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}},
-          {"type": "rectangleTool", "label": "Company", "color": "#373ACC", "generates_subject_type": "sa_company" },
-          {"type": "rectangleTool", "label": "Horse", "color": "#373ACC", "generates_subject_type": "sa_horse" },
-          {"type": "rectangleTool", "label": "Name", "color": "#373ACC", "generates_subject_type": "sa_name", "help": {"title":"Name", "body": "Given and surname of soldier. Transcribe as written. First Last order will vary."} },
-          {"type": "rectangleTool", "label": "Corps", "color": "#373ACC", "generates_subject_type": "sa_corps" },
-          {"type": "rectangleTool", "label": "Rank and length of service", "color": "#373ACC", "generates_subject_type": "sa_rank_length" },
-          {"type": "rectangleTool", "label": "Address", "color": "#373ACC", "generates_subject_type": "sa_address" },
-          {"type": "rectangleTool", "label": "Trade or calling", "color": "#373ACC", "generates_subject_type": "sa_trade", "help": {"title":"Trade or Calling", "body": "Description of job. May include two jobs. Maintain order from form."} },
-          {"type": "rectangleTool", "label": "Name and address of employer", "color": "#373ACC", "generates_subject_type": "sa_employer" }
+          {"type": "rectangleTool", "label": "Number", "color": "#373ACC", "generates_subject_type": "transcribe_cd_number" },
+          {"type": "rectangleTool", "label": "Port", "color": "#373ACC", "generates_subject_type": "transcribe_cd_port" },
+          {"type": "rectangleTool", "label": "Name of person", "color": "#373ACC", "generates_subject_type": "transcribe_cd_name", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}},
+          {"type": "rectangleTool", "label": "Date", "color": "#373ACC", "generates_subject_type": "transcribe_cd_date" },
+          {"type": "rectangleTool", "label": "Nationality", "color": "#373ACC", "generates_subject_type": "transcribe_cd_nationality" },
+          {"type": "rectangleTool", "label": "Birthplace", "color": "#373ACC", "generates_subject_type": "transcribe_cd_birthplace", "help": {"title":"Name", "body": "Given and surname of soldier. Transcribe as written. First Last order will vary."} },
+          {"type": "rectangleTool", "label": "Age", "color": "#373ACC", "generates_subject_type": "transcribe_cd_age" },
+          {"type": "rectangleTool", "label": "Complexion", "color": "#373ACC", "generates_subject_type": "transcribe_cd_complexion" },
+          {"type": "rectangleTool", "label": "Height", "color": "#373ACC", "generates_subject_type": "transcribe_cd_height" },
+          {"type": "rectangleTool", "label": "Hair", "color": "#373ACC", "generates_subject_type": "transcribe_cd_hair", "help": {"title":"Trade or Calling", "body": "Description of job. May include two jobs. Maintain order from form."} },
+          {"type": "rectangleTool", "label": "Build", "color": "#373ACC", "generates_subject_type": "transcribe_cd_build" },
+          {"type": "rectangleTool", "label": "Eyes", "color": "#373ACC", "generates_subject_type": "transcribe_cd_eyes" },
+          {"type": "rectangleTool", "label": "Particular marks", "color": "#373ACC", "generates_subject_type": "transcribe_cd_marks" },
+          {"type": "rectangleTool", "label": "Family", "color": "#373ACC", "generates_subject_type": "transcribe_cd_family" },
+          {"type": "rectangleTool", "label": "Where resident", "color": "#373ACC", "generates_subject_type": "transcribe_cd_resident" },
+          {"type": "rectangleTool", "label": "Date of arrival in Australia", "color": "#373ACC", "generates_subject_type": "transcribe_cd_arrival_date" },
+          {"type": "rectangleTool", "label": "Place of residence", "color": "#373ACC", "generates_subject_type": "transcribe_cd_place_of_residence" },
+          {"type": "rectangleTool", "label": "Occupation", "color": "#373ACC", "generates_subject_type": "transcribe_cd_occupation" },
+          {"type": "rectangleTool", "label": "Property", "color": "#373ACC", "generates_subject_type": "transcribe_cd_property" },
+          {"type": "rectangleTool", "label": "Date of departure", "color": "#373ACC", "generates_subject_type": "transcribe_cd_departure_date" },
+          {"type": "rectangleTool", "label": "Destination", "color": "#373ACC", "generates_subject_type": "transcribe_cd_destination" },
+          {"type": "rectangleTool", "label": "Ship", "color": "#373ACC", "generates_subject_type": "transcribe_cd_ship" },
+          {"type": "rectangleTool", "label": "References in Australia", "color": "#373ACC", "generates_subject_type": "transcribe_cd_references" }
         ]
       }
     },
-    "other_data_field":{
+    "mark_cedt_fields":{
+      "generates_subjects": true,
+      "tool":"pickOneMarkOne",
+      "next_task": "are_photos_present",
+      "instruction":"Select a label and draw rectangle around any corresponding entries on the document.",
+      "tool_config": {
+        "tools": [
+          {"type": "rectangleTool", "label": "Book number", "color": "#373ACC", "generates_subject_type": "transcribe_cd_book_number" },
+          {"type": "rectangleTool", "label": "Number", "color": "#373ACC", "generates_subject_type": "transcribe_cd_number" },
+          {"type": "rectangleTool", "label": "State", "color": "#373ACC", "generates_subject_type": "transcribe_cd_state" },
+          {"type": "rectangleTool", "label": "Name of person", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_name", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}},
+          {"type": "rectangleTool", "label": "Period", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_period", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}},
+          {"type": "rectangleTool", "label": "Date", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_date" },
+          {"type": "rectangleTool", "label": "Nationality", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_nationality" },
+          {"type": "rectangleTool", "label": "Birthplace", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_birthplace", "help": {"title":"Name", "body": "Given and surname of soldier. Transcribe as written. First Last order will vary."} },
+          {"type": "rectangleTool", "label": "Age", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_age" },
+          {"type": "rectangleTool", "label": "Complexion", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_complexion" },
+          {"type": "rectangleTool", "label": "Height", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_height" },
+          {"type": "rectangleTool", "label": "Hair", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_hair", "help": {"title":"Trade or Calling", "body": "Description of job. May include two jobs. Maintain order from form."} },
+          {"type": "rectangleTool", "label": "Build", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_build" },
+          {"type": "rectangleTool", "label": "Eyes", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_eyes" },
+          {"type": "rectangleTool", "label": "Particular marks", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_marks" },
+          {"type": "rectangleTool", "label": "Date of departure", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_departure_date" },
+          {"type": "rectangleTool", "label": "Port of embarkation", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_port_departure" },
+          {"type": "rectangleTool", "label": "Destination", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_destination" },
+          {"type": "rectangleTool", "label": "Ship (departure)", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_ship_departure" },
+          {"type": "rectangleTool", "label": "Date of return", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_return_date" },
+          {"type": "rectangleTool", "label": "Ship (arrival)", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_ship_arrival" },
+          {"type": "rectangleTool", "label": "Port (arrival)", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_port_arrival" }
+        ]
+      }
+    },
+    "mark_landing_form_fields":{
+      "generates_subjects": true,
+      "tool":"pickOneMarkOne",
+      "next_task": "are_photos_present",
+      "instruction":"Select a label and draw rectangle around any corresponding entries on the document.",
+      "tool_config": {
+        "tools": [
+          {"type": "rectangleTool", "label": "Name of person", "color": "#373ACC", "generates_subject_type": "transcribe_landing_name", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}},
+          {"type": "rectangleTool", "label": "Date", "color": "#373ACC", "generates_subject_type": "transcribe_landing_date" },
+          {"type": "rectangleTool", "label": "Nationality", "color": "#373ACC", "generates_subject_type": "transcribe_landing_nationality" },
+          {"type": "rectangleTool", "label": "Ship", "color": "#373ACC", "generates_subject_type": "transcribe_landing_ship" },
+          {"type": "rectangleTool", "label": "Place", "color": "#373ACC", "generates_subject_type": "transcribe_landing_place" }
+        ]
+      }
+    },
+    "are_photos_present": {
+      "tool": "pickOne",
+      "instruction": "Are there any *unmarked* photos present?",
+      "help": {
+        "title": "Photos",
+        "body": "Sometimes there are photos."
+      },
+      "tool_config": {
+        "options": [
+          {"value": "yes", "label": "Yes", "next_task": "mark_photos" },
+          {"value": "no", "label": "No"}
+        ]
+      },
+      "next_task": "mark_chinese_characters"
+    },
+    "mark_photos":{
+      "generates_subjects": true,
+      "tool":"pickOneMarkOne",
+      "next_task": "pick_photo_gender",
+      "instruction":"Select a type and draw rectangle around any Chinese characters on the document.",
+      "tool_config": {
+        "tools": [
+          {"type": "rectangleTool", "label": "Portrait (front)", "color": "#373ACC", "generates_subject_type": "marked_photo_front", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}},
+          {"type": "rectangleTool", "label": "Portrait (side)", "color": "#373ACC", "generates_subject_type": "marked_photo_side", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}}
+        ]
+      }
+    },
+    "pick_photo_gender": {
+      "tool": "pickOne",
+      "instruction": "Is this person male or female?",
+      "help": {
+        "title": "Photos",
+        "body": "Sometimes there are photos."
+      },
+      "tool_config": {
+        "options": [
+          {"value": "male", "label": "Male" },
+          {"value": "female", "label": "Female"},
+          {"value": "unknown", "label": "Unknown"}
+        ]
+      },
+      "next_task": "mark_chinese_characters"
+    },
+    "are_prints_present": {
+      "tool": "pickOne",
+      "instruction": "Are there any *unmarked* thumb or hand prints present?",
+      "help": {
+        "title": "Prints",
+        "body": "Sometimes there are prints."
+      },
+      "tool_config": {
+        "options": [
+          {"value": "handprint", "label": "Handprint", "next_task": "mark_handprint" },
+          {"value": "thumbprints", "label": "Thumbprints", "next_task": "mark_thumbprints" },
+          {"value": "none", "label": "Neither" }
+        ]
+      },
+      "next_task": "are_photos_present"
+    },
+    "mark_handprint":{
+      "generates_subjects": true,
+      "tool":"pickOneMarkOne",
+      "next_task": "are_photos_present",
+      "instruction":"Draw a rectangle around the handprint.",
+      "tool_config": {
+        "tools": [
+          {"type": "rectangleTool", "label": "Handprint", "color": "#373ACC", "generates_subject_type": "marked_handprint", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}}
+        ]
+      }
+    },
+    "mark_thumbprints":{
+      "generates_subjects": true,
+      "tool":"pickOneMarkOne",
+      "next_task": "are_photos_present",
+      "instruction":"Draw a rectangle around each thumbprint.",
+      "tool_config": {
+        "tools": [
+          {"type": "rectangleTool", "label": "Thumbprint", "color": "#373ACC", "generates_subject_type": "marked_thumbprint", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}}
+        ]
+      }
+    },
+    "mark_chinese_characters":{
+      "generates_subjects": true,
+      "tool":"pickOneMarkOne",
+      "instruction":"Draw a rectangle around any groups of Chinese characters.",
+      "help":{
+        "title":"Unknown Data and Marginalia",
+        "file":"help_mark_other"
+      },
+      "next_task": "mark_other_data",
+      "tool_config":{
+        "tools": [
+          {"type":"rectangleTool", "label": "Chinese characters", "color": "#373ACC", "generates_subject_type":"marked_chinese_characters"}
+        ]
+      }
+    },
+    "mark_other_data":{
       "generates_subjects": true,
       "tool":"pickOneMarkOne",
       "instruction":"Draw a rectangle around any extra information that should be marked.",
@@ -90,7 +242,7 @@
       "next_task":null,
       "tool_config":{
         "tools": [
-          {"type":"rectangleTool", "label": "Other", "color": "#373ACC", "generates_subject_type":"transcribe_other_data_field"}
+          {"type":"rectangleTool", "label": "Other", "color": "#373ACC", "generates_subject_type":"transcribe_other_data"}
         ]
       }
 
