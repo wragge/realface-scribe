@@ -95,9 +95,9 @@
       "instruction":"Select a label and draw rectangle around any corresponding entries on the document.",
       "tool_config": {
         "tools": [
-          {"type": "rectangleTool", "label": "Book number", "color": "#373ACC", "generates_subject_type": "transcribe_cd_book_number" },
-          {"type": "rectangleTool", "label": "Number", "color": "#373ACC", "generates_subject_type": "transcribe_cd_number" },
-          {"type": "rectangleTool", "label": "State", "color": "#373ACC", "generates_subject_type": "transcribe_cd_state" },
+          {"type": "rectangleTool", "label": "Book number", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_book_number" },
+          {"type": "rectangleTool", "label": "Number", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_number" },
+          {"type": "rectangleTool", "label": "State", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_state" },
           {"type": "rectangleTool", "label": "Name of person", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_name", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}},
           {"type": "rectangleTool", "label": "Period", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_period", "help": {"title":"Regimental No.", "body": "Look for a number with the following formats: 'xx/yyyy' or 'yyyyy'"}},
           {"type": "rectangleTool", "label": "Date", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_date" },
