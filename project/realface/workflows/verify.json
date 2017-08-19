@@ -1,0 +1,535 @@
+{
+  "name": "verify",
+  "label": "Verify Workflow",
+  "retire_limit": 3,
+  "generates_subjects": true,
+  "generates_subjects_method": "most-popular",
+  "generates_subjects_after": 3,
+  "generates_subjects_max": 20,
+  "generates_subjects_agreement": 0.75,
+  "subjects_classifiable_by_creator": false,
+
+  "tasks": {
+        "transcribed_other_page_type":{
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type":"consensus_other_page_type",
+            "next_task": null
+        },        
+        "transcribed_other_data":{
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type":"consensus_other_page_type",
+            "next_task": null
+        },
+        "transcribed_cd_number": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_number",
+            "next_task": null
+        },
+        "transcribed_cd_port": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_port",
+            "next_task": null
+        },
+        "transcribed_cd_name": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_name",
+            "next_task": null
+        },
+        "transcribed_cd_date": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_date",
+            "next_task": null
+        },
+        "transcribed_cd_nationality": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_nationality",
+            "next_task": null
+        },
+        "transcribed_cd_birthplace": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_birthplace",
+            "next_task": null
+        },
+        "transcribed_cd_age": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_age",
+            "next_task": null
+        },
+        "transcribed_cd_complexion": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_complexion",
+            "next_task": null
+        },
+        "transcribed_cd_height": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_height",
+            "next_task": null
+        },
+        "transcribed_cd_hair": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_hair",
+            "next_task": null
+        },
+        "transcribed_cd_build": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_build",
+            "next_task": null
+        },
+        "transcribed_cd_eyes": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_eyes",
+            "next_task": null
+        },
+        "transcribed_cd_marks": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_marks",
+            "next_task": null
+        },
+        "transcribed_cd_family": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_family",
+            "next_task": null
+        },
+        "transcribed_cd_resident": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_resident",
+            "next_task": null
+        },
+        "transcribed_cd_arrival_date": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_arrival_date",
+            "next_task": null
+        },
+        "transcribed_cd_place_of_residence": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_place_of_residence",
+            "next_task": null
+        },
+        "transcribed_cd_occupation": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_occupation",
+            "next_task": null
+        },
+        "transcribed_cd_property": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_property",
+            "next_task": null
+        },
+        "transcribed_cd_departure_date": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_departure_date",
+            "next_task": null
+        },
+        "transcribed_cd_destination": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_destination",
+            "next_task": null
+        },
+        "transcribed_cd_ship": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_ship",
+            "next_task": null
+        },
+        "transcribed_cd_references": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_references",
+            "next_task": null
+        },
+        "transcribed_cedt_book_number": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_book_number",
+            "next_task": null
+        },
+        "transcribed_cedt_number": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_number",
+            "next_task": null
+        },
+        "transcribed_cedt_state": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_state",
+            "next_task": null
+        },
+        "transcribed_cedt_name": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_name",
+            "next_task": null
+        },
+        "transcribed_cedt_period": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_period",
+            "next_task": null
+        },
+        "transcribed_cedt_date": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_date",
+            "next_task": null
+        },
+        "transcribed_cedt_nationality": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_nationality",
+            "next_task": null
+        },
+        "transcribed_cedt_birthplace": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_birthplace",
+            "next_task": null
+        },
+        "transcribed_cedt_age": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_age",
+            "next_task": null
+        },
+        "transcribed_cedt_complexion": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_complexion",
+            "next_task": null
+        },
+        "transcribed_cedt_height": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_height",
+            "next_task": null
+        },
+        "transcribed_cedt_hair": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_hair",
+            "next_task": null
+        },
+        "transcribed_cedt_build": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_build",
+            "next_task": null
+        },
+        "transcribed_cedt_eyes": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_eyes",
+            "next_task": null
+        },
+        "transcribed_cedt_marks": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_marks",
+            "next_task": null
+        },
+        "transcribed_cedt_departure_date": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_departure_date",
+            "next_task": null
+        },
+        "transcribed_cedt_port_departure": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_port_departure",
+            "next_task": null
+        },
+        "transcribed_cedt_destination": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_destination",
+            "next_task": null
+        },
+        "transcribed_cedt_ship_departure": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_ship_departure",
+            "next_task": null
+        },
+        "transcribed_cedt_arrival_date": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_departure_date",
+            "next_task": null
+        },
+        "transcribed_cedt_ship_arrival": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_ship_arrival",
+            "next_task": null
+        },
+        "transcribed_cedt_port_arrival": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_port_arrival",
+            "next_task": null
+        },
+        "transcribed_landing_name": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_landing_name",
+            "next_task": null
+        },
+        "transcribed_landing_date": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_landing_date",
+            "next_task": null
+        },
+        "transcribed_landing_nationality": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_landing_nationality",
+            "next_task": null
+        },
+        "transcribed_landing_ship": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_landing_ship",
+            "next_task": null
+        },
+        "transcribed_landing_place": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_landing_place",
+            "next_task": null
+        }
+
+  }
+}

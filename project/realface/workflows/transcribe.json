@@ -97,7 +97,7 @@
                 "file": "basic_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Age**.",
-            "generates_subject_type": "transcribe_cd_age",
+            "generates_subject_type": "transcribed_cd_age",
             "next_task": null
         },
         "transcribe_cd_complexion": {
@@ -273,7 +273,7 @@
                 "file": "basic_transcribe_help"
             },
             "instruction": "Transcribe the entry for **References in Australia**.",
-            "generates_subject_type": "transcribe_cd_references",
+            "generates_subject_type": "transcribed_cd_references",
             "next_task": null
         },
         "transcribe_cedt_book_number": {
@@ -372,7 +372,7 @@
                 "file": "basic_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Age**.",
-            "generates_subject_type": "transcribe_cedt_age",
+            "generates_subject_type": "transcribed_cedt_age",
             "next_task": null
         },
         "transcribe_cedt_complexion": {
