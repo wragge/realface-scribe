@@ -86,7 +86,8 @@ namespace :subjects do
       data = subjects.first
       thumbnail       = data['thumbnail']
       name            = data['name']
-      meta_data       = data.except('group_id', 'file_path', 'retire_count', 'thumbnail', 'width','height', 'order')
+      # I think metadata should (or could) be unique to subjects, so should not be set here
+      # meta_data       = data.except('group_id', 'file_path', 'retire_count', 'thumbnail', 'width','height', 'order')
 
       puts "    Adding subject set: #{set_key}"
       subject_set = group.subject_sets.find_or_create_by key: set_key
@@ -94,13 +95,13 @@ namespace :subjects do
         name: name,
         project: project,
         thumbnail: thumbnail,
-        meta_data: meta_data
+        # meta_data: meta_data
       })
       puts "      - saved subject set #{subject_set.thumbnail}"
 
       subjects.each_with_index do |subj, i|
         data = subj
-
+        meta_data = subj.except('group_id', 'file_path', 'retire_count', 'thumbnail', 'width','height', 'order')
         width = subj['width'].nil? ? nil : subj['width'].to_i
         height = subj['height'].nil? ? nil : subj['height'].to_i
 
