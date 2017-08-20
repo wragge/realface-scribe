@@ -2,13 +2,13 @@
   "title": "The Real Face of White Australia",
   "short_title": "RealFace",
   "summary": "Transcription of White Australia Policy files",
-  "background": "/images/background.png",
+  "background": "/images/background.jpg",
   "admin_email": "tim.sherratt@gmail.com",
     "team_emails": [ "tim.sherratt@gmail.com" ],
   "logo": "/images/logo.png",
   "privacy_policy":"https://www.zooniverse.org/privacy",
   "terms_map": {
-    "group": "series",
+    "group": "file",
     "subject set": "file",
     "subject": "page"
   },
