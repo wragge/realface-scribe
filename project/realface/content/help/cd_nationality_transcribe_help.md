@@ -1,4 +1,14 @@
+# Transcribing nationality
+
 Please transcribe the highlighted region as accurately as you can. Don't worry about spelling or formatting, just copy what you see.
+
+Common values for this field include: `Chinese`, `Syrian`, `Indian`, and `Japanese`.
+
+For example, this field
+
+![Example of a name](/images/cd_nationality.png)
+
+should be transcribed as `Chinese`.
 
 If the highlighted region is mislabeled or misplaced, press the **Bad mark** button.
 

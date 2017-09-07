@@ -36,7 +36,7 @@ Login = React.createClass
 
   renderLoggedInAsGuest: ->
     <span >
-      { @renderLoginOptions('Log in to save your work:',"login-container") }
+      { @renderLoginOptions('Log in:',"login-container") }
     </span>
 
   renderLoggedIn:->

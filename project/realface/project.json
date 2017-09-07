@@ -26,19 +26,12 @@
      "url": "http://canberra.edu.au"
     }
   ],
-  "forum": {},
-  "blog_url": "http://2017.exploringdigitalheritage.net",
-  "discuss_url": "",
-  "analytics": {
-    "google_tag_manager_client_id": ""
-  },
-  "metadata_search": {
-    "fields": [
-      {
-        "label": "Person",
-        "field": "name"
-      }
+  "menus": {
+    "main": [
+      {"label": "Intro", "page": "intro"},
+      {"label": "About", "page": "about"},
+      {"label": "Help", "page": "help"}
     ],
-    "feature_on_homepage": false
+    "footer": []
   }
 }

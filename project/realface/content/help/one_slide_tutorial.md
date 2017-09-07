@@ -1,6 +1,8 @@
 In this project, you’ll be working together alongside other volunteers to analyze personnel files of early 20th-century New Zealand soldiers, thereby helping with historical, academic, and genealogical research. You can choose to **Mark** and/or **Transcribe** key information that you find.
  
 **Mark** is used to identify specific pieces of data; for example, dates, nationalities, heights and weights, etc. You will see marks submitted by other volunteers, although you can hide these for visibility. If an item is already marked, you can skip over it! You can also delete others’ marks, which counts as a vote for that mark being incorrect.
+
+![Animation of marking process](/images/mark.gif)
  
 **Transcribe** allows you to type in the information that you and your fellow measurers have marked. You can do this after creating each mark (click on the mark to access the transcribe icon on the lower-right corner of a box), or once the page is completely marked (click on ‘Transcribe this Page’). You can also exclusively do transcription by selecting the Transcribe option from the bar at the top of the page.
 

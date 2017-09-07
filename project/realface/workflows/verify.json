@@ -40,6 +40,16 @@
             "generates_subject_type": "consensus_cd_number",
             "next_task": null
         },
+        "transcribed_cd_collector": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cd_collector",
+            "next_task": null
+        },
         "transcribed_cd_port": {
             "instruction": "Choose the best transcription or enter your own!",
             "tool": "verifyTool",
@@ -278,6 +288,16 @@
             },
             "help": { "file": "basic_verify_help" },
             "generates_subject_type": "consensus_cedt_number",
+            "next_task": null
+        },
+        "transcribed_cedt_collector": {
+            "instruction": "Choose the best transcription or enter your own!",
+            "tool": "verifyTool",
+            "tool_config": {
+              "displays_transcribe_button": true
+            },
+            "help": { "file": "basic_verify_help" },
+            "generates_subject_type": "consensus_cedt_collector",
             "next_task": null
         },
         "transcribed_cedt_state": {

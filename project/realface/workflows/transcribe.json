@@ -34,6 +34,17 @@
             "generates_subject_type": "transcribed_cd_number",
             "next_task": null
         },
+        "transcribe_cd_collector": {
+            "tool": "textTool",
+            "tool_config": {},
+            "help": {
+                "title": "Transcription Help",
+                "file": "basic_transcribe_help"
+            },
+            "instruction": "Transcribe the entry for **Collector of Customs**.",
+            "generates_subject_type": "transcribed_cd_collector",
+            "next_task": null
+        },
         "transcribe_cd_port": {
             "tool": "textTool",
             "tool_config": {},
@@ -71,8 +82,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_nationality_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Nationality**.",
             "generates_subject_type": "transcribed_cd_nationality",
@@ -259,7 +269,7 @@
             "tool_config": {},
             "help": {
                 "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_transcribe_ship"
             },
             "instruction": "Transcribe the entry for **Ship**.",
             "generates_subject_type": "transcribed_cd_ship",
@@ -296,6 +306,17 @@
             },
             "instruction": "Transcribe the entry for **Number**.",
             "generates_subject_type": "transcribed_cedt_number",
+            "next_task": null
+        },
+        "transcribe_cedt_collector": {
+            "tool": "textTool",
+            "tool_config": {},
+            "help": {
+                "title": "Transcription Help",
+                "file": "basic_transcribe_help"
+            },
+            "instruction": "Transcribe the entry for **Collector of Customs**.",
+            "generates_subject_type": "transcribed_cedt_collector",
             "next_task": null
         },
         "transcribe_cedt_state": {
@@ -479,7 +500,7 @@
             "tool_config": {},
             "help": {
                 "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cedt_transcribe_ship"
             },
             "instruction": "Transcribe the entry for **Ship**.",
             "generates_subject_type": "transcribed_cedt_ship_departure",
@@ -501,7 +522,7 @@
             "tool_config": {},
             "help": {
                 "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cedt_transcribe_ship"
             },
             "instruction": "Transcribe the entry for **Ship**.",
             "generates_subject_type": "transcribed_cedt_ship_arrival",
@@ -556,7 +577,7 @@
             "tool_config": {},
             "help": {
                 "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cedt_transcribe_ship"
             },
             "instruction": "Transcribe the entry for **Ship**.",
             "generates_subject_type": "transcribed_landing_ship",
