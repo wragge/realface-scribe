@@ -1,12 +1,11 @@
 {
   "title": "The Real Face of White Australia",
   "short_title": "RealFace",
-  "summary": "Transcription of White Australia Policy files",
+  "summary": "Join us in transcribing records that document the lives of ordinary people living under the restrictions of the White Australia Policy.",
   "background": "/images/background.jpg",
   "admin_email": "tim.sherratt@gmail.com",
     "team_emails": [ "tim.sherratt@gmail.com" ],
   "logo": "/images/logo.png",
-  "privacy_policy":"https://www.zooniverse.org/privacy",
   "terms_map": {
     "group": "file",
     "subject set": "file",
@@ -19,13 +18,13 @@
       "organization": "UofC"
     }
   ],
-
   "organizations": [
     {
      "title": "UofC",
      "url": "http://canberra.edu.au"
     }
   ],
+  "discuss_url": "http://wraggehelp.net/c/real-face-transcription",
   "menus": {
     "main": [
       {"label": "Intro", "page": "intro"},

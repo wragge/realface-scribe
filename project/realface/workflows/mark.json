@@ -94,7 +94,7 @@
       "next_task": "are_photos_present",
       "instruction":"Select a field from the list below and then draw a rectangle around any corresponding values on the document.",
       "help": {
-        "file": "fields_mark_help"
+        "file": "mark_fields_help"
       },
       "tool_config": {
         "tools": [
@@ -130,7 +130,7 @@
       "next_task": "are_photos_present",
       "instruction":"Select a field from the list below and then draw a rectangle around any corresponding values on the document.",
       "help": {
-        "file": "fields_mark_help"
+        "file": "mark_fields_help"
       },
       "tool_config": {
         "tools": [

@@ -1,14 +1,68 @@
 {
     "name": "Tutorial",
-    "first_task": "welcome",
+    "first_task": "learn_marking",
     "tasks": {
-        "welcome": {
+        "learn_marking": {
+            "next_task": "learn_transcribing",
+            "help": {
+                "title": "Marking Regions",
+                "file": "learn_marking"
+            }
+        },
+        "learn_transcribing": {
+            "next_task": "learn_transcribing",
+            "help": {
+                "title": "Transcribing",
+                "file": "learn_transcribing"
+            }
+        },
+        "learn_verifying": {
             "next_task": null,
             "help": {
-                "title": "Welcome to Measuring the ANZACs!",
-                "file": "one_slide_tutorial"
+                "title": "Learn To Verify",
+                "file": "learn_verifying"
             }
         }
-
+    },
+    "workflows": {
+      "mark": {
+        "name": "Mark Tutorial",
+        "first_task": "learn_marking",
+        "tasks": {
+          "learn_marking": {
+              "next_task": null,
+              "help": {
+                  "title": "Marking Fields",
+                  "file": "tutorial_marking_1"
+              }
+          }
+        }
+      },
+      "transcribe": {
+        "name": "Transcribe Tutorial",
+        "first_task": "learn_transcribing",
+        "tasks": {
+          "learn_transcribing": {
+              "next_task": null,
+              "help": {
+                  "title": "Transcribing Fields",
+                  "file": "tutorial_transcribe_1"
+              }
+          }
+        }
+      },
+      "verify": {
+        "name": "Verify Tutorial",
+        "first_task": "learn_verifying",
+        "tasks": {
+          "learn_verifying": {
+              "next_task": null,
+              "help": {
+                  "title": "Verifying Fields",
+                  "file": "tutorial_verify_1"
+              }
+          }
+        }
+      }
     }
 }
