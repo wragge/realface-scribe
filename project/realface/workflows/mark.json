@@ -159,7 +159,8 @@
     "mark_photos":{
       "generates_subjects": true,
       "tool":"pickOneMarkOne",
-      "next_task": "Select the type of photo from the list below and then draw a rectangle around it on the page.",
+      "instruction": "Select the type of photo from the list below and then draw a rectangle around it on the page.",
+      "next_task": "pick_photo_gender",
       "tool_config": {
         "tools": [
           {"type": "rectangleTool", "label": "Portrait (front)", "color": "#373ACC", "generates_subject_type": "marked_photo_front" },
