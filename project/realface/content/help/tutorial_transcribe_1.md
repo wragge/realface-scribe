@@ -5,3 +5,5 @@ Transcribe the text exactly as you see it. For additional help and sample transc
 If the text is hard to read, give it your best shot and keep going. Keep in mind: each mark will be transcribed by multiple volunteers and quality controlled in the Verify task.
 
 If the field is indecipherable, mark it as Illegible and move on to the next entry. If there is no information to transcribe, select Bad region and move on to the next entry.
+
+For a general overview of the transcription process see the [introduction](/#/intro) page. For more detailed information see the [help](/#/help) page.
