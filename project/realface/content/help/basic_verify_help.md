@@ -1,3 +1,5 @@
+# Verify
+
 Please transcribe the highlighted region as best you can. 
 
 If the highlighted region is mislabeled or misplaced, press the **Bad mark** button.

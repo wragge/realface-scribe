@@ -27,8 +27,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_number_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Number**.",
             "generates_subject_type": "transcribed_cd_number",
@@ -38,8 +37,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_collector_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Collector of Customs**.",
             "generates_subject_type": "transcribed_cd_collector",
@@ -49,7 +47,6 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
                 "file": "basic_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Port**.",
@@ -60,8 +57,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_name_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Name**.",
             "generates_subject_type": "transcribed_cd_name",
@@ -71,8 +67,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_date_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Date**.",
             "generates_subject_type": "transcribed_cd_date",
@@ -92,8 +87,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_birthplace_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Birthplace**.",
             "generates_subject_type": "transcribed_cd_birthplace",
@@ -103,8 +97,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_age_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Age**.",
             "generates_subject_type": "transcribed_cd_age",
@@ -114,8 +107,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_complexion_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Complexion**.",
             "generates_subject_type": "transcribed_cd_complexion",
@@ -125,8 +117,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_height_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Height**.",
             "generates_subject_type": "transcribed_cd_height",
@@ -136,8 +127,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_hair_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Hair**.",
             "generates_subject_type": "transcribed_cd_hair",
@@ -169,8 +159,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_marks_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Particular marks**.",
             "generates_subject_type": "transcribed_cd_marks",
@@ -180,8 +169,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_family_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Family**.",
             "generates_subject_type": "transcribed_cd_family",
@@ -312,8 +300,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cd_collector_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Collector of Customs**.",
             "generates_subject_type": "transcribed_cedt_collector",
@@ -334,8 +321,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cedt_name_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Name**.",
             "generates_subject_type": "transcribed_cedt_name",
@@ -411,8 +397,7 @@
             "tool": "textTool",
             "tool_config": {},
             "help": {
-                "title": "Transcription Help",
-                "file": "basic_transcribe_help"
+                "file": "cedt_height_transcribe_help"
             },
             "instruction": "Transcribe the entry for **Height**.",
             "generates_subject_type": "transcribed_cedt_height",

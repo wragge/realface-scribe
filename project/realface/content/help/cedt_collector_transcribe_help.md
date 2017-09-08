@@ -1,6 +1,12 @@
-# Transcribe
+# Transcribing Collector of Customs
 
 Please transcribe the highlighted region as accurately as you can. Don't worry about spelling or formatting, just copy what you see.
+
+For example, this field
+
+![Example of a name](/images/cedt_collector.png)
+
+should be transcribed as `Nicholas C. Lockyer`.
 
 If the highlighted region is mislabeled or misplaced, press the **Bad mark** button.
 

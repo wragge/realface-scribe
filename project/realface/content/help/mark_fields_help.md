@@ -2,6 +2,8 @@
 
 Select the field you're marking from the list on the right. Then mark the corresponding value on the page by drawing a rectangle around it.
 
+Not all documents will include all the listed fields.
+
 If a field is already marked, you don't need to do it again. If a field is empty, don't bother drawing a rectangle.
 
 ![example of marking a field](/images/mark.gif)

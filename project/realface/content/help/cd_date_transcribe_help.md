@@ -1,6 +1,12 @@
-# Transcribe
+# Transcribing date
 
 Please transcribe the highlighted region as accurately as you can. Don't worry about spelling or formatting, just copy what you see.
+
+For example, this field
+
+![Example of a name](/images/cd_date.png)
+
+should be transcribed as `3 February 1903`.
 
 If the highlighted region is mislabeled or misplaced, press the **Bad mark** button.
 

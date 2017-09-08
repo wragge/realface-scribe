@@ -61,14 +61,14 @@
       },
       "tool_config": {
         "tools": [
-          {"type": "rectangleTool", "label": "Number", "color": "#373ACC", "generates_subject_type": "transcribe_cd_number" },
+          {"type": "rectangleTool", "label": "Number", "color": "#373ACC", "generates_subject_type": "transcribe_cd_number", "help": {"file": "cd_number_mark_help"} },
           {"type": "rectangleTool", "label": "Collector of Customs", "color": "#373ACC", "generates_subject_type": "transcribe_cd_collector"},
           {"type": "rectangleTool", "label": "Port", "color": "#373ACC", "generates_subject_type": "transcribe_cd_port" },
           {"type": "rectangleTool", "label": "Name of person", "color": "#373ACC", "generates_subject_type": "transcribe_cd_name", "help": {"file": "cd_name_mark_help"}},
           {"type": "rectangleTool", "label": "Date", "color": "#373ACC", "generates_subject_type": "transcribe_cd_date", "help": {"file": "cd_date_mark_help"}},
           {"type": "rectangleTool", "label": "Nationality", "color": "#373ACC", "generates_subject_type": "transcribe_cd_nationality", "help": {"file": "cd_nationality_mark_help"}},
           {"type": "rectangleTool", "label": "Birthplace", "color": "#373ACC", "generates_subject_type": "transcribe_cd_birthplace", "help": {"file": "cd_birthplace_mark_help"}},
-          {"type": "rectangleTool", "label": "Age", "color": "#373ACC", "generates_subject_type": "transcribe_cd_age", "help": {"file": "cd_age_mark_help"}},
+          {"type": "rectangleTool", "label": "Age", "color": "#373ACC", "generates_subject_type": "transcribe_cd_age" },
           {"type": "rectangleTool", "label": "Complexion", "color": "#373ACC", "generates_subject_type": "transcribe_cd_complexion" },
           {"type": "rectangleTool", "label": "Height", "color": "#373ACC", "generates_subject_type": "transcribe_cd_height" },
           {"type": "rectangleTool", "label": "Hair", "color": "#373ACC", "generates_subject_type": "transcribe_cd_hair"},
@@ -98,11 +98,11 @@
       },
       "tool_config": {
         "tools": [
-          {"type": "rectangleTool", "label": "Book number", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_book_number" },
-          {"type": "rectangleTool", "label": "Number", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_number" },
-          {"type": "rectangleTool", "label": "Collector of Customs", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_collector"},
+          {"type": "rectangleTool", "label": "Book number", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_book_number", "help": {"file": "cedt_book_number_mark_help"} },
+          {"type": "rectangleTool", "label": "Number", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_number", "help": {"file": "cedt_number_mark_help"}},
+          {"type": "rectangleTool", "label": "Collector of Customs", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_collector", "help": {"file": "cedt_collector_mark_help"}},
           {"type": "rectangleTool", "label": "State", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_state" },
-          {"type": "rectangleTool", "label": "Name of person", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_name" },
+          {"type": "rectangleTool", "label": "Name of person", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_name", "help": {"file": "cedt_name_mark_help"}},
           {"type": "rectangleTool", "label": "Period", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_period" },
           {"type": "rectangleTool", "label": "Date", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_date" },
           {"type": "rectangleTool", "label": "Nationality", "color": "#373ACC", "generates_subject_type": "transcribe_cedt_nationality" },
@@ -146,7 +146,7 @@
       "tool": "pickOne",
       "instruction": "Are there any unmarked photos on this page?",
       "help": {
-        "file": "photos_present_help.md"
+        "file": "photos_present_help"
       },
       "tool_config": {
         "options": [
@@ -160,6 +160,9 @@
       "generates_subjects": true,
       "tool":"pickOneMarkOne",
       "instruction": "Select the type of photo from the list below and then draw a rectangle around it on the page.",
+      "help": {
+        "file": "mark_photos_help"
+      },
       "next_task": "pick_photo_gender",
       "tool_config": {
         "tools": [
@@ -171,10 +174,6 @@
     "pick_photo_gender": {
       "tool": "pickOne",
       "instruction": "Do you think this person is male or female?",
-      "help": {
-        "title": "Photos",
-        "body": "Sometimes there are photos."
-      },
       "tool_config": {
         "options": [
           {"value": "male", "label": "Male" },
@@ -189,6 +188,9 @@
       "tool":"pickOneMarkOne",
       "next_task": "are_photos_present",
       "instruction":"Are there any unmarked thumb or hand prints on this page? If so select the type from the list below and then draw rectangles around any prints.",
+      "help": {
+        "file": "mark_prints_help"
+      },
       "tool_config": {
         "tools": [
           {"type": "rectangleTool", "label": "Handprint", "color": "#373ACC", "generates_subject_type": "marked_handprint" },

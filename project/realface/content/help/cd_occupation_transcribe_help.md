@@ -1,6 +1,12 @@
-# Transcribe
+# Transcribing occupation
 
 Please transcribe the highlighted region as accurately as you can. Don't worry about spelling or formatting, just copy what you see.
+
+For example, this field
+
+![Example of a name](/images/cd_occupation.png)
+
+should be transcribed as `StoreKeeper`.
 
 If the highlighted region is mislabeled or misplaced, press the **Bad mark** button.
 
