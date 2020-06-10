@@ -15,9 +15,9 @@ gem 'omniauth-facebook'
 gem "omniauth-google-oauth2"
 gem 'omniauth-zooniverse', '~> 0.0.3'
 # Updated to work with mongo+srv URIs
-gem 'mongoid', '~> 5.4', '>= 5.4.1'
+gem 'mongoid', '~> 5.4.1'
 #gem 'mongo', '2.4.1'
-gem 'mongo', '< 3.0.0', '>= 2.5.1'
+gem 'mongo', '~> 2.10'
 # gem 'active_model_serializers'
 gem 'active_model_serializers', '~>0.9.4'
 gem 'mongoid-serializer'
