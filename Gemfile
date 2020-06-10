@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.2.7'
+# Lowest version available on Heroku 16
+ruby '2.2.10'
 
 gem 'rails', '4.0.13'
 gem 'sass-rails', '~> 4.0.0'
@@ -13,8 +14,10 @@ gem 'devise'
 gem 'omniauth-facebook'
 gem "omniauth-google-oauth2"
 gem 'omniauth-zooniverse', '~> 0.0.3'
-gem 'mongoid', '~> 5.2', '>= 5.2.1'
-gem 'mongo', '2.4.1'
+# Updated to work with mongo+srv URIs
+gem 'mongoid', '~> 5.4', '>= 5.4.1'
+#gem 'mongo', '2.4.1'
+gem 'mongo', '< 3.0.0', '>= 2.5.1'
 gem 'active_model_serializers'
 gem 'mongoid-serializer'
 gem 'rack-cors', :require => 'rack/cors'
