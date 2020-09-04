@@ -17,7 +17,7 @@
     "json-api-client": "^0.4.4",
     "normalize-styl": "^3.0.3",
     "normalize.css": "^3.0.3",
-    "react": "^0.13.3",
+    "react": "^15.6.2",
     "react-router": "^0.13.3"
   },
   "scripts": {
