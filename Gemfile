@@ -38,7 +38,7 @@ gem 'actionpack-action_caching'
 gem 'newrelic_rpm'
 gem 'newrelic_moped'
 
-gem 'puma', '~> 2.14.0'
+gem 'puma', '~> 4.3.11'
 
 gem 'logstasher', '~> 0.6'
 
